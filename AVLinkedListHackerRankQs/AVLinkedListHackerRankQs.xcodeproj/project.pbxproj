@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		294C32D51C9B443F00795520 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 294C32D41C9B443F00795520 /* main.m */; };
+		29B3D0CF1C9C8D640086C855 /* MergeTwoSortedLists.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29B3D0CE1C9C8D640086C855 /* MergeTwoSortedLists.cpp */; };
+		29B3D0D11C9C8D840086C855 /* CompareTwoLinkedLists.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29B3D0D01C9C8D840086C855 /* CompareTwoLinkedLists.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		294C32D11C9B443F00795520 /* AVLinkedListHackerRankQs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AVLinkedListHackerRankQs; sourceTree = BUILT_PRODUCTS_DIR; };
 		294C32D41C9B443F00795520 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B3D0CE1C9C8D640086C855 /* MergeTwoSortedLists.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MergeTwoSortedLists.cpp; sourceTree = "<group>"; };
+		29B3D0D01C9C8D840086C855 /* CompareTwoLinkedLists.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CompareTwoLinkedLists.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				294C32D41C9B443F00795520 /* main.m */,
+				29B3D0D01C9C8D840086C855 /* CompareTwoLinkedLists.cpp */,
+				29B3D0CE1C9C8D640086C855 /* MergeTwoSortedLists.cpp */,
 			);
 			path = AVLinkedListHackerRankQs;
 			sourceTree = "<group>";
@@ -118,6 +124,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29B3D0D11C9C8D840086C855 /* CompareTwoLinkedLists.cpp in Sources */,
+				29B3D0CF1C9C8D640086C855 /* MergeTwoSortedLists.cpp in Sources */,
 				294C32D51C9B443F00795520 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,6 +245,7 @@
 				294C32DA1C9B443F00795520 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

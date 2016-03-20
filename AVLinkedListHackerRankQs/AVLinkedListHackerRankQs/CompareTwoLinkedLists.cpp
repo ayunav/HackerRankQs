@@ -49,7 +49,7 @@ int CompareListsRecursively(struct Node *headA, struct Node* headB){
     }
     
     if (headA != NULL && headB != NULL) {
-        return (headA->data == headB->data) && CompareListsRecursively(headA->next, headB->next);
+        return (headA->data == headB->data) && CompareListsRecursively(headA->next, headB->next); // conditional operator (if true && true -> return 1) 
     }
     return 0;
 }

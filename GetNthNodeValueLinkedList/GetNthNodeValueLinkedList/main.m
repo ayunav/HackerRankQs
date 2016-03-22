@@ -1,20 +1,17 @@
 //
 //  main.m
-//  AVMergeLinkedLists
+//  GetNthNodeValueLinkedList
 //
-//  Created by Ayuna Vogel on 3/19/16.
+//  Created by Ayuna Vogel on 3/22/16.
 //  Copyright © 2016 Ayuna Vogel. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-
 struct Node {
     int data;
     struct Node *next;
 };
-
-
 
 @interface LinkedList : NSObject
 
@@ -58,27 +55,11 @@ struct Node {
 
 @end
 
-struct Node* mergeLists(struct Node *headA, struct Node *headB) {
-    struct Node *nodeC = NULL;
+
+struct Node* getNthNodeValue(struct Node *head, int positionFromTail) {
+    struct Node *node;
     
-    if (headA == NULL) {
-        return headB;
-    } else if (headB == NULL) {
-        return headA;
-    }
-    
-//    printf("headA is %d \n", headA->data);
-//    printf("headB is %d \n\n", headB->data);
-    
-    if (headA->data <= headB->data) {
-        nodeC = headA;
-        nodeC->next = mergeLists(headA->next, headB);
-    } else if (headA->data > headB->data) {
-        nodeC = headB;
-        nodeC->next = mergeLists(headA, headB->next);
-    }
-    
-    return nodeC;
+    return node;
 }
 
 
@@ -86,27 +67,14 @@ struct Node* mergeLists(struct Node *headA, struct Node *headB) {
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        LinkedList *listA = [[LinkedList alloc]init];
-        [listA append:1];
-        [listA append:3];
-        [listA append:5];
+        LinkedList *list = [[LinkedList alloc]init];
+        [list append:1];
+        [list append:3];
+        [list append:5];
         printf("ListA is ");
-        [listA printList];
+        [list printList];
         
-        
-        LinkedList *listB = [[LinkedList alloc]init];
-        [listB append:2];
-        [listB append:4];
-        [listB append:7];
-        printf("ListB is ");
-        [listB printList];
-        
-        
-        mergeLists(listA.head, listB.head);
-        printf("ListA is ");
-        [listA printList];
-        printf("ListB is ");
-        [listB printList];
+ 
         
     }
     return 0;

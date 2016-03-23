@@ -56,10 +56,28 @@ struct Node {
 @end
 
 
-struct Node* getNthNodeValue(struct Node *head, int positionFromTail) {
-    struct Node *node;
+int getNthNodeValue(struct Node *head, int positionFromTail) {
+    struct Node *ptr1 = head;
+    struct Node *ptr2 = head;
+    int count = 0;
     
-    return node;
+    while (ptr1 != nil && count < positionFromTail) {
+        ptr1 = ptr1->next;
+        count++;
+        printf("count is %d \n", count);
+    }
+    
+    if (count != positionFromTail) {
+        return 0;
+    } else {
+        while (ptr1 != nil) {
+            ptr1 = ptr1->next;
+            ptr2 = ptr2->next;
+        }
+    }
+
+    printf("ptr2->data is %d \n\n", ptr2->data);
+    return ptr2->data;
 }
 
 
@@ -71,9 +89,11 @@ int main(int argc, const char * argv[]) {
         [list append:1];
         [list append:3];
         [list append:5];
-        printf("ListA is ");
+        printf("List is \n");
         [list printList];
         
+        
+        getNthNodeValue(list.head, 3);
  
         
     }

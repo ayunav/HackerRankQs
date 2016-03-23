@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+// PROBLEM: https://www.hackerrank.com/challenges/get-the-value-of-the-node-at-a-specific-position-from-the-tail
+
 struct Node {
     int data;
     struct Node *next;
